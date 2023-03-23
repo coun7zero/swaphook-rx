@@ -1,0 +1,2 @@
+curl -d '{"action":"BUY","price":"{{close}}","symbol":"{{ticker}}","currency":"EUR","exchange":"{{exchange}}","type":"market","amount":"0.5","timenow":"{{timenow}}","volume":"{{volume}}","key":"xxx"}' -H "Content-Type: application/json" -X POST http://localhost:1337/ccxt
+

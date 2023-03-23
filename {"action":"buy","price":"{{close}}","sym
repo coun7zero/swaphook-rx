@@ -1,0 +1,1 @@
+{"action":"{{strategy.order.action}}","price":"{{close}}","symbol":"ICX","currency":"USDT","exchange":"{{exchange}}","type":"market","amount":"0.25","timenow":"{{timenow}}","volume":"{{volume}}","token":"", "mode": "trade"}

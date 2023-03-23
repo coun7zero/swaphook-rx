@@ -1,0 +1,44 @@
+{
+  "name": "Swaphook",
+  "version": "1.0.0",
+  "description": "Bot based on Trading View Alerts",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "uniswap": "ts-node src/uniswap.ts",
+    "production": "NODE_ENV=production ts-node src/index.ts",
+    "manager": "ts-node ngrok-manager.ts",
+    "getToken": "ts-node getToken.ts",
+    "watch": "nodemon --watch src/ --watch config.ts --ext ts --ignore '*.spec.ts' --exec npm run start",
+    "watch-uniswap": "nodemon --watch src/_test_uniswap.ts --exec npm run uniswap",
+    "ncu": "ncu -u"
+  },
+  "dependencies": {
+    "@marblejs/core": "3.5.0",
+    "@marblejs/middleware-body": "3.5.0",
+    "@marblejs/middleware-io": "3.5.0",
+    "@marblejs/middleware-jwt": "3.5.0",
+    "@marblejs/middleware-logger": "3.5.0",
+    "@uniswap/sdk": "3.0.3",
+    "ccxt": "1.50.86",
+    "chalk": "4.1.1",
+    "cli-table": "0.3.6",
+    "date-fns": "2.22.1",
+    "degiro-api": "1.0.3",
+    "ethers": "5.3.0",
+    "etherscan-api": "10.0.5",
+    "fp-ts": "2.10.5",
+    "ngrok": "4.0.1",
+    "node-telegram-bot-api": "0.53.0",
+    "ramda": "0.27.1",
+    "rxjs": "7.1.0",
+    "universal-rxjs-ajax": "2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7",
+    "ts-node": "10.0.0",
+    "typescript": "4.3.2"
+  },
+  "author": "coun7zero",
+  "license": "ISC"
+}
